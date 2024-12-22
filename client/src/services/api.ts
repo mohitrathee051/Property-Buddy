@@ -7,7 +7,7 @@ interface PriceEstimateParams {
 
 export async function estimatePrice(params: PriceEstimateParams): Promise<number> {
   try {
-    const response = await fetch('http://127.0.0.1:5000/predict_home_price', {
+    const response = await fetch('https://property-buddy.onrender.com/predict_home_price', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
